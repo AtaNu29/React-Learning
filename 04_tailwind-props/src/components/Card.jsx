@@ -12,10 +12,10 @@ function card({src, userName, price = 50, cardValue}) {
       </div>
       <div className="flex flex-col py-3 px-3 pb-10">
         <div className="flex justify-between ">
-          <h1 className="font-bold ">{userName}</h1>
-          <h1>Price</h1>
+          <h1 className="font-bold text-white">{userName}</h1>
+          <h1 className='text-white'>Price</h1>
         </div>
-        <div className="flex  justify-between">
+        <div className="flex  justify-between text-white">
           <p>#{cardValue}</p>
           <p>₹ {price}</p>
         </div>
