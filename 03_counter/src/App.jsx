@@ -1,36 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState } from 'react';
 import './App.css'
 
 function App() {
 
-  let [counter, setCounter] =  useState(5);
+  let [counter, setCounter] = useState(10);
 
-  const addValue = () => {
+    const Increment = () => {
     if (counter < 20) {
-     setCounter(prev => prev + 1); // Basically (prev) => prev + 1
+      setCounter(prev => prev + 1); // Basically (prev) => prev + 1 -> "previous value"
     }
-    
   }
-  const removeValue = () => {
+
+  const Decrement = () => {
     if (counter > 0) {
       setCounter(prev => prev - 1);
     }
-    }
-
+  }
+  
   return (
     <>
-      <h1>New count project</h1>
-      <h2>Counter value: {counter}</h2>
+      <h1>Counter First value : {counter}</h1> <br />
 
       <button
-      onClick={addValue}
-      >Add value {counter}</button>
-      <br />
+      onClick={Increment}
+      >Increment</button> <br /> <br />
+
       <button
-      onClick={removeValue}
-      >Remove value {counter}</button>
+      onClick={Decrement}
+      >Decrement</button> <br />
+
+      <h1>Counter Second value : {counter}</h1> 
     </>
   )
 }
