@@ -48,8 +48,6 @@ function App() {
             >
               Dark
             </button>
-
-            {/* Extra buttons to make total 9 */}
             <button
               onClick={() => setColor("orange")}
               className="outline-none px-4 py-1 cursor-pointer rounded-full text-white shadow-lg"
